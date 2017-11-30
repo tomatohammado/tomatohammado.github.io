@@ -3,26 +3,28 @@
 }
 
 body {
+	min-height: 100vh;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #e8002e;
+	/* background-image source via https://www.transparenttextures.com/ */
+	background-image: url("../assets/always-grey.png");
 }
 
 header {
 	/* margin on child h1 pushed outside of container, fix vai https://stackoverflow.com/a/13573739 */
 	overflow: auto;
-	background-color: #F00;
+	background-color: rgba(0, 0, 0, .2);
 	text-align: center;
-}
-
-main {
-	background-color: #0F0;
-	height: 500px;
 }
 
 nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	border: 1px solid #CCC;
+	border: 1px solid #BBB;
 	border-left: none;
 	border-right: none;
 }
@@ -33,15 +35,20 @@ nav > li {
 	margin: 10px;
 }
 
-nav > li a {
+nav > li > a {
 	text-decoration: none;
 }
 
-nav > li a:hover {
+nav > li > a:hover {
 	text-decoration: underline;
+}
+
+main {
+	flex-grow: 1;
 }
 
 footer {
 	height: 50px;
-	background-color: #00F;
+	background-color: rgba(0, 0, 0, .1);
+	border-top: 1px solid #BBB;	
 }
