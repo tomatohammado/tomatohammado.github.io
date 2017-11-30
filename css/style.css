@@ -11,6 +11,7 @@ body {
 	background-color: #e8002e;
 	/* background-image source via https://www.transparenttextures.com/ */
 	background-image: url("../assets/always-grey.png");
+	font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -57,6 +58,7 @@ main > article {
 
 main > article > section {
 	padding-left: 15px;
+	font-family: 'Raleway', sans-serif;
 }
 
 footer {
