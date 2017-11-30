@@ -69,6 +69,10 @@ main > article > p {
 	color: #EEE;
 }
 
+main > article > p > a {
+	text-decoration: underline;
+}
+
 footer {
 	height: 50px;
 	padding: 0 15px;
