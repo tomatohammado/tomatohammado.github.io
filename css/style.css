@@ -10,12 +10,38 @@ header {
 	/* margin on child h1 pushed outside of container, fix vai https://stackoverflow.com/a/13573739 */
 	overflow: auto;
 	background-color: #F00;
+	text-align: center;
 }
 
 main {
 	background-color: #0F0;
+	height: 500px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border: 1px solid #CCC;
+	border-left: none;
+	border-right: none;
+}
+
+nav > li {
+	flex-basis: 75px;
+	list-style: none;
+	margin: 10px;
+}
+
+nav > li a {
+	text-decoration: none;
+}
+
+nav > li a:hover {
+	text-decoration: underline;
 }
 
 footer {
+	height: 50px;
 	background-color: #00F;
 }
