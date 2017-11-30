@@ -12,6 +12,11 @@ body {
 	/* background-image source via https://www.transparenttextures.com/ */
 	background-image: url("../assets/always-grey.png");
 	font-family: 'Lato', sans-serif;
+	color: #FFF;
+}
+
+a {
+	color: #EEE;
 }
 
 header {
@@ -59,6 +64,7 @@ main > article {
 main > article > section {
 	padding-left: 15px;
 	font-family: 'Raleway', sans-serif;
+	color: #EEE;
 }
 
 footer {
