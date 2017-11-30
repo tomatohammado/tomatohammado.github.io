@@ -17,6 +17,7 @@ body {
 
 a {
 	color: #EEE;
+	text-decoration: none;
 }
 
 header {
@@ -27,25 +28,26 @@ header {
 }
 
 nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 	border: 1px solid #BBB;
 	border-left: none;
 	border-right: none;
 }
 
-nav > li {
+nav > ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav > ul > li {
 	flex-basis: 75px;
 	list-style: none;
 	margin: 10px;
 }
 
-nav > li > a {
-	text-decoration: none;
-}
-
-nav > li > a:hover {
+nav > ul > li > a:hover {
 	text-decoration: underline;
 }
 
@@ -61,7 +63,7 @@ main > article {
 	width: 450px;
 }
 
-main > article > section {
+main > article > p {
 	padding-left: 15px;
 	font-family: 'Raleway', sans-serif;
 	color: #EEE;
@@ -76,10 +78,6 @@ footer {
 	align-items: baseline;
 	background-color: rgba(0, 0, 0, .1);
 	border-top: 1px solid #BBB;	
-}
-
-footer a {
-	text-decoration: none;	
 }
 
 footer a:hover {
