@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	/* margin on child h1 pushed outside of container, fix vai https://stackoverflow.com/a/13573739 */
+	overflow: auto;
+	background-color: #F00;
+}
+
+main {
+	background-color: #0F0;
+}
+
+footer {
+	background-color: #00F;
+}
