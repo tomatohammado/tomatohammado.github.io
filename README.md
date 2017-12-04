@@ -1,12 +1,12 @@
 # tomatohammado.github.io
 
-##Purpose
+## Purpose
 
 To introduce myself as a developer and demonstrate my projects.
 
-##Projects
+## Projects
 
 _Coming Soon_
 
-##Contact
+## Contact
 [hmd.node@gmail.com](mailto:hmd.node@gmail.com)
