@@ -8,7 +8,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #e8002e;
+  /* background-color: #e8002e; */
+  background-color: #555;
 	/* background-image source via https://www.transparenttextures.com/ */
 	background-image: url("../assets/always-grey.png");
 	font-family: 'Lato', sans-serif;
@@ -20,7 +21,7 @@ a {
 	text-decoration: none;
 }
 
-header {
+header.primary-header {
 	/* margin on child h1 pushed outside of container, fix vai https://stackoverflow.com/a/13573739 */
 	overflow: auto;
 	background-color: rgba(0, 0, 0, .2);
@@ -59,17 +60,17 @@ main {
 	align-items: center;
 }
 
-main > article {
-	width: 450px;
+main > section {
+	width: 600px;
 }
 
-main > article > p {
+main > section > p {
 	padding-left: 15px;
 	font-family: 'Raleway', sans-serif;
 	color: #EEE;
 }
 
-main > article > p > a {
+main > section > p > a {
 	text-decoration: underline;
 }
 
