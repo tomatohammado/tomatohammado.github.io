@@ -74,6 +74,24 @@ main > section > p > a {
 	text-decoration: underline;
 }
 
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot img {
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  object-fit: cover;
+  object-position: 0 0;
+  width: 150px;
+  height: 150px;
+  background-color: #F6F7FB;
+  margin-right: 24px;
+}
+
 .brand-statement {
   font-size: 1.4rem;
 }
