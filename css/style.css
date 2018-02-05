@@ -112,6 +112,10 @@ main > section > p > a {
   margin: 0 10px;
 }
 
+.featured-projects img:hover {
+  box-shadow: 0 0 8px #FFF;
+}
+
 footer {
 	height: 50px;
 	padding: 0 15px;
