@@ -11,7 +11,7 @@ body {
   /* background-color: #e8002e; */
   background-color: #555;
 	/* background-image source via https://www.transparenttextures.com/ */
-	background-image: url("../assets/always-grey.png");
+	background-image: url("../assets/images/always-grey.png");
 	font-family: 'Lato', sans-serif;
 	color: #FFF;
 }
@@ -72,6 +72,26 @@ main > section > p {
 
 main > section > p > a {
 	text-decoration: underline;
+}
+
+.brand-statement {
+  font-size: 1.4rem;
+}
+
+.container header {
+  text-align: center;
+}
+
+.featured-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-projects img {
+  width: 400px;
+  margin: 0 10px;
 }
 
 footer {
