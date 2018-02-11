@@ -173,6 +173,10 @@ main > section > p > a {
   margin-right: 8px;
 }
 
+.overlay-details a:hover p {
+  text-decoration: underline;
+}
+
 footer {
 	height: 50px;
 	padding: 0 15px;
