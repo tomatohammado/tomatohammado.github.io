@@ -12,13 +12,28 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
+  <div class="md-modal md-effect-7" id="modal-1">
+    <div class="md-content">
+      <h3>Modal Dialog</h3>
+      <div>
+        <p>This is a modal window. You can do the following things with it:</p>
+        <ul>
+          <li><strong>Read:</strong> Modal windows will probably tell you something important so don't forget to read what it says.</li>
+          <li><strong>Look:</strong> modal windows enjoy a certain kind of attention; just look at it and appreciate its presence.</li>
+          <li><strong>Close:</strong> click on the button below to close the modal.</li>
+        </ul>
+        <button class="md-close">Close me!</button>
+      </div>
+    </div>
+  </div>
+
   <header class="container primary-header">
     <h1>Hammad Malik</h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="md-trigger" data-modal="modal-1">Contact</li>
         <li><a href="assets/Hammad-Malik-Resume.pdf">Resume</a></li>
       </ul>
     </nav>
@@ -113,5 +128,9 @@
     </div>
 
   </footer>
+  <div class="md-overlay"></div>
+
+  <script src="js/classie.js"></script>
+  <script src="js/modalEffects.js"></script>
 </body>
 </html>
