@@ -27,6 +27,17 @@ header.primary-header {
   overflow: auto;
   background-color: rgba(0, 0, 0, .2);
   text-align: center;
+  height: 132px;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  position: fixed;
+  width: 100%;
+  z-index: 2001;
+}
+
+header.primary-header:hover {
+  background-color: rgba(0, 0, 0, .8);
 }
 
 header h1 {
@@ -58,6 +69,8 @@ nav > ul > li > a:hover {
 }
 
 main {
+  position: relative;
+  top: 132px;
   flex-grow: 1;
   display: flex;
   padding: 20px;
@@ -112,6 +125,11 @@ main > section > p > a {
   font-size: 1.2em;
 }
 
+.projects-anchor-target {
+  position: absolute;
+  top: 100px;
+}
+
 .featured-projects {
   display: flex;
   flex-direction: column;
@@ -126,10 +144,9 @@ main > section > p > a {
 .project {
   position: relative;
   width: 700px;
-  margin: 0 10px;
+  margin: 10px;
   height: 99%;
   border-radius: 4px;
-  padding: 10px 0;
 }
 
 .project img {
@@ -147,7 +164,7 @@ main > section > p > a {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
-  height: 98.4%;
+  height: 99%;
   border-radius: 4px;
 }
 
@@ -184,6 +201,8 @@ main > section > p > a {
 }
 
 footer {
+  position: relative;
+  top: 132px;
   min-height: 50px;
   padding: 0 15px;
   display: flex;
@@ -192,6 +211,13 @@ footer {
   align-items: baseline;
   background-color: rgba(0, 0, 0, .1);
   border-top: 1px solid #BBB;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+footer:hover {
+  background-color: rgba(0, 0, 0, .4);
 }
 
 .social-link {
@@ -319,7 +345,7 @@ footer {
 
 .md-effect-7 {
   top: 0;
-  /* top: 132px; */
+  top: 132px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
