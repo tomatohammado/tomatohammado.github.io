@@ -9,7 +9,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   /* background-color: #e8002e; */
-  background-color: #555;
+  /* background-color: #555; */
+  background-color: #7AC1E3;
   /* background-image source via https://www.transparenttextures.com/ */
   background-image: url("../assets/images/always-grey.png");
   font-family: 'Work Sans', sans-serif;
@@ -317,8 +318,8 @@ footer {
 }
 
 .md-effect-7 {
-  /* top: 0; */
-  top: 132px;
+  top: 0;
+  /* top: 132px; */
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
