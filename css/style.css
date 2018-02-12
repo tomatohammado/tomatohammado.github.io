@@ -25,12 +25,12 @@ a {
 header.primary-header {
   /* margin on child h1 pushed outside of container, fix vai https://stackoverflow.com/a/13573739 */
   overflow: auto;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .5);
   text-align: center;
   height: 132px;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
   position: fixed;
   width: 100%;
   z-index: 2001;
@@ -42,12 +42,15 @@ header.primary-header:hover {
 
 header h1 {
   font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: .67em 0;
 }
 
 nav {
   border: 1px solid #BBB;
   border-left: none;
   border-right: none;
+  background-color: rgba(0, 0, 0, .15);
 }
 
 nav > ul {
@@ -76,14 +79,19 @@ main {
   padding: 20px;
   flex-direction: column;
   align-items: center;
+  text-shadow: 1px 1px 0px #555, -1px -1px 0px #555, 1px -1px 0px #555, -1px 1px 0px  #555;
 }
 
 .container.about {
-  width: 600px;
+  width: 800px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .25);
 }
 
-main > section > p {
+.brand-statement p {
   padding-left: 15px;
+  margin: 0;
   color: #EEE;
 }
 
@@ -111,10 +119,6 @@ main > section > p > a {
 
 .brand-statement {
   font-size: 1.25em;
-}
-
-.brand-statement p {
-  margin-bottom: 0;
 }
 
 .container header {
@@ -211,9 +215,9 @@ footer {
   align-items: baseline;
   background-color: rgba(0, 0, 0, .1);
   border-top: 1px solid #BBB;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 footer:hover {
