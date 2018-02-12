@@ -96,11 +96,19 @@ main > section > p > a {
 }
 
 .brand-statement {
-  font-size: 1.4rem;
+  font-size: 1.25em;
+}
+
+.brand-statement p {
+  margin-bottom: 0;
 }
 
 .container header {
   text-align: center;
+}
+
+.container.projects header {
+  font-size: 1.2em;
 }
 
 .featured-projects {
@@ -174,7 +182,7 @@ main > section > p > a {
 }
 
 footer {
-  height: 50px;
+  min-height: 50px;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
@@ -307,7 +315,7 @@ footer {
   font-weight: 300;
 }
 
-.md-effect-7{
+.md-effect-7 {
   /* top: 0; */
   top: 130px;
   -webkit-transform: translateX(-50%);
@@ -347,4 +355,59 @@ footer {
 
 .md-trigger:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 740px){
+  .featured-projects {
+    flex-direction: column;
+  }
+
+  .project {
+    padding: 10px;
+  }
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+  }
+
+  .md-content {
+    width: 380px;
+  }
+
+  .md-modal {
+    left: 48.75%;
+  }
+
+  .container.about {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .brand-statement {
+    padding: 0 25px;
+  }
+
+  .md-effect-7 {
+    top: 132px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+  footer .container.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
