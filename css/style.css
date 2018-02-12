@@ -8,11 +8,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: #e8002e; */
-  /* background-color: #555; */
-  background-color: #7AC1E3;
+  background-color: #7993D0;
   /* background-image source via https://www.transparenttextures.com/ */
-  background-image: url("../assets/images/always-grey.png");
+  background-image: url("../assets/images/white-diamond.png");
   font-family: 'Work Sans', sans-serif;
   color: #FFF;
 }
