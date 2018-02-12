@@ -77,7 +77,6 @@ main {
   padding: 20px;
   flex-direction: column;
   align-items: center;
-  text-shadow: 1px 1px 0px #555, -1px -1px 0px #555, 1px -1px 0px #555, -1px 1px 0px  #555;
 }
 
 .container.about {
