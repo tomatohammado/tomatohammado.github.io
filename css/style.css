@@ -21,9 +21,10 @@ a {
 }
 
 header.primary-header {
-  /* margin on child h1 pushed outside of container, fix vai https://stackoverflow.com/a/13573739 */
+  /* margin on child h1 pushed outside of container, fix via https://stackoverflow.com/a/13573739 */
   overflow: auto;
-  background-color: rgba(0, 0, 0, .5);
+  /* background-color: rgba(0, 0, 0, .5); */
+  background-color: #333;
   text-align: center;
   height: 132px;
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -34,9 +35,9 @@ header.primary-header {
   z-index: 2001;
 }
 
-header.primary-header:hover {
+/* header.primary-header:hover {
   background-color: rgba(0, 0, 0, .8);
-}
+} */
 
 header h1 {
   font-family: 'Space Mono', monospace;
