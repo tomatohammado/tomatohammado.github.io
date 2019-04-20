@@ -8,15 +8,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #7993D0;
+  background-color: #7993d0;
   /* background-image source via https://www.transparenttextures.com/ */
-  background-image: url("../assets/images/white-diamond.png");
-  font-family: 'Work Sans', sans-serif;
-  color: #FFF;
+  background-image: url("../assets/images/asfalt-light.png");
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
 }
 
 a {
-  color: #EEE;
+  color: #eee;
   text-decoration: none;
 }
 
@@ -40,16 +40,16 @@ header.primary-header {
 } */
 
 header h1 {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   margin: 0;
-  padding: .67em 0;
+  padding: 0.67em 0;
 }
 
 nav {
-  border: 1px solid #BBB;
+  border: 1px solid #bbb;
   border-left: none;
   border-right: none;
-  background-color: rgba(0, 0, 0, .15);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 nav > ul {
@@ -81,16 +81,16 @@ main {
 }
 
 .container.about {
-  width: 800px;
-  padding: 15px 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 24px;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, .25);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .brand-statement p {
   padding-left: 15px;
-  margin: 0;
-  color: #EEE;
+  color: #eee;
 }
 
 main > section > p > a {
@@ -106,12 +106,12 @@ main > section > p > a {
 
 .headshot img {
   border-radius: 50%;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   object-fit: cover;
   object-position: 0 0;
-  width: 150px;
-  height: 150px;
-  background-color: #F6F7FB;
+  width: 240px;
+  height: 240px;
+  background-color: #f6f7fb;
   margin-right: 24px;
 }
 
@@ -156,7 +156,7 @@ main > section > p > a {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -170,9 +170,9 @@ main > section > p > a {
   border-radius: 4px;
 }
 
-.project:hover .overlay{
+.project:hover .overlay {
   opacity: 1;
-  box-shadow: 0 0 16px #FFF;
+  box-shadow: 0 0 16px #fff;
 }
 
 .overlay-details {
@@ -211,20 +211,20 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  background-color: rgba(0, 0, 0, .1);
-  border-top: 1px solid #BBB;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #bbb;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
 }
 
 footer:hover {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .social-link {
   padding: 0 5px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .social-link span {
@@ -246,7 +246,7 @@ footer:hover {
   overflow: hidden;
 }
 
-.md-perspective body  {
+.md-perspective body {
   background: #222;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
@@ -302,11 +302,11 @@ footer:hover {
 /* Content styles */
 .md-content {
   /* background: #e74c3c; */
-  background: #42A7D8;
+  background: #42a7d8;
   position: relative;
   border-radius: 3px;
   margin: 0 auto;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   width: 800px;
 }
 
@@ -317,7 +317,7 @@ footer:hover {
   font-size: 3em;
   font-weight: 300;
   opacity: 0.8;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 3px 3px 0 0;
   font-weight: 700;
 }
@@ -325,7 +325,7 @@ footer:hover {
 .md-content h3 span {
   float: right;
   border-radius: 50%;
-  font-size: .75em;
+  font-size: 0.75em;
   width: 50px;
   height: 50px;
   position: relative;
@@ -335,9 +335,8 @@ footer:hover {
 }
 
 .md-content h3 span:hover {
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, 0.25);
 }
-
 
 .md-content > div {
   padding: 30px 40px;
@@ -359,9 +358,9 @@ footer:hover {
   -moz-transform: translateY(-200%);
   -ms-transform: translateY(-200%);
   transform: translateY(-200%);
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
   opacity: 0;
 }
 
@@ -418,13 +417,22 @@ footer:hover {
 
   .container.about {
     width: 400px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
+  .headshot img {
+    margin: 8px;
+  }
+
   .brand-statement {
-    padding: 0 25px;
+    padding: 0 8px;
+  }
+
+  .brand-statement p {
+    padding: 0;
   }
 
   footer {
