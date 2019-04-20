@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -123,13 +127,17 @@ main > section > p > a {
   text-align: center;
 }
 
+.container.projects {
+  position: relative;
+}
+
 .container.projects header {
   font-size: 1.2em;
 }
 
 .projects-anchor-target {
   position: absolute;
-  top: 100px;
+  top: -132px;
 }
 
 .featured-projects {
@@ -145,8 +153,8 @@ main > section > p > a {
 
 .project {
   position: relative;
-  width: 700px;
-  margin: 10px;
+  width: 960px;
+  margin: 12px;
   height: 99%;
   border-radius: 4px;
 }
