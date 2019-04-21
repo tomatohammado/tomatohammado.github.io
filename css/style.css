@@ -271,6 +271,14 @@ footer .copyright p {
   padding-right: 0;
 }
 
+.social-link a {
+  vertical-align: middle;
+}
+
+.social-link svg {
+  margin-right: 2px;
+}
+
 /* modal styles */
 .md-perspective,
 .md-perspective body {
@@ -446,17 +454,9 @@ footer .copyright p {
     padding-left: 32px;
   }
 
-  .social-link a {
-    vertical-align: middle;
-  }
-
-  .social-link svg {
-    margin-right: 2px;
-  }
-
-  .md-content {
+  /* .md-content {
     width: 380px;
-  }
+  } */
 
   /* .md-modal {
     left: 48.75%;
