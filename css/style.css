@@ -25,8 +25,9 @@ a {
 }
 
 h2 {
-  margin-top: 0.6em;
-  margin-left: 12px;
+  /* margin-top: 0.6em;
+  margin-left: 12px; */
+  margin: 0.4em 12px;
   font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
@@ -44,7 +45,7 @@ header.primary-header {
   overflow: auto;
   background-color: #003366;
   text-align: center;
-  height: 157px;
+  height: 122px;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -60,8 +61,7 @@ header.primary-header {
 header h1 {
   font-family: "Space Mono", monospace;
   font-size: 2.5em;
-  margin: 0;
-  padding: 0.67em 0;
+  margin: 0.25em 0;
   text-shadow: 1px 1px 0 #4f6d7a;
 }
 
@@ -93,7 +93,7 @@ nav > ul > li > a:hover {
 
 main {
   position: relative;
-  top: 157px;
+  top: 122px;
   flex-grow: 1;
   display: flex;
   padding: 0 0 20px;
@@ -138,6 +138,7 @@ main > section > p > a {
 }
 
 .brand-statement {
+  max-width: 720px;
   font-size: 1.25em;
 }
 
@@ -155,7 +156,7 @@ main > section > p > a {
 
 .projects-anchor-target {
   position: absolute;
-  top: -157px;
+  top: -122px;
 }
 
 .featured-projects {
@@ -230,14 +231,14 @@ main > section > p > a {
 
 footer {
   position: relative;
-  top: 157px;
+  top: 122px;
   min-height: 50px;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   border-top: 1px solid #bbb;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
@@ -245,12 +246,17 @@ footer {
 }
 
 footer:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer .copyright p {
+  font-size: 22px;
 }
 
 .social-link {
-  padding: 0 5px;
+  padding: 0 8px;
   font-family: "Space Mono", monospace;
+  font-size: 20px;
 }
 
 .social-link span {
@@ -330,53 +336,64 @@ footer:hover {
 .md-content {
   position: relative;
   width: 100% !important;
-  height: calc(100vw - 157px);
+  height: calc(100vh - 122px);
   margin: 0;
   background: #42a7d8;
+  font-size: 2.2em;
   font-family: "Space Mono", monospace;
+  overflow: auto;
   /* width: 800px; */
   /* background: #e74c3c; */
   /* border-radius: 3px; */
   /* margin: 0 auto; */
 }
 
-.md-content h3 {
-  margin: 0;
-  padding: 0.4em;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 300;
-  opacity: 0.8;
-  /* background: rgba(0, 0, 0, 0.1); */
-  border-radius: 3px 3px 0 0;
-  font-weight: 700;
+.md-content header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.md-content h3 span {
-  float: right;
-  border-radius: 50%;
-  font-size: 0.75em;
+.md-content header .md-close {
   width: 50px;
   height: 50px;
-  position: relative;
-  bottom: 5px;
-  right: 5px;
-  line-height: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  border-radius: 50%;
+  font-weight: bold;
 }
 
-.md-content h3 span:hover {
+.md-content header .md-close:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.md-content > div {
-  padding: 30px 40px;
-  margin: 0;
-  font-weight: 300;
+.md-content header h3 {
+  margin-top: 0.5em;
+  /* text-align: center; */
+  font-weight: 700;
+}
+
+.md-content .container-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.md-content .container-contact section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.md-content .container-contact .social-link {
+  margin: 12px 0;
+  font-size: 22px;
 }
 
 .md-effect-7 {
   top: 0;
-  top: 157px;
+  top: 122px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -403,15 +420,6 @@ footer:hover {
   opacity: 1;
 }
 
-.container-contact {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.container-contact span {
-  margin: 0 10px;
-}
-
 .md-trigger:hover {
   text-decoration: underline;
 }
@@ -428,24 +436,31 @@ footer:hover {
     width: calc(100vw - 20px);
   }
 
-  .container-contact {
-    display: flex;
+  /* .container-contact {
     flex-direction: column;
     max-width: 380px;
-  }
+  } */
 
   .social-link {
     text-align: left;
     padding-left: 32px;
   }
 
+  .social-link a {
+    vertical-align: middle;
+  }
+
+  .social-link svg {
+    margin-right: 2px;
+  }
+
   .md-content {
     width: 380px;
   }
 
-  .md-modal {
+  /* .md-modal {
     left: 48.75%;
-  }
+  } */
 
   .container.about {
     padding: 20px;
@@ -469,21 +484,30 @@ footer:hover {
 
   footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    padding-bottom: 15px;
+    padding: 16px 8px;
+  }
+
+  footer .copyright p {
+    margin: 0.5em 0 0.25em;
   }
 
   footer .container.social {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    right: 18px;
+  }
+
+  footer .container.social section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   footer .social-link {
+    margin: 8px 0;
     padding: 0;
   }
 }
