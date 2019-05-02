@@ -85,6 +85,7 @@ nav > ul > li {
   font-size: 1.2em;
   flex-basis: 75px;
   list-style: none;
+  cursor: pointer;
 }
 
 nav > ul > li > a:hover {
